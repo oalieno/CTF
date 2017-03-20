@@ -24,7 +24,7 @@ flag 前面一定是 TDOH
 
 google wiki 上的 google 介紹
 
-找不同...嗯
+找不同...嗯那就寫個 script 吧...
 
 ## PC
 
