@@ -2,7 +2,7 @@
 
 ans = ""
 
-with open("flag") as flag:
+with open("matlab-output.txt") as flag:
     data = flag.read().strip()
     data = data.split(',')
     for d in data:
