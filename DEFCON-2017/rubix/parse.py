@@ -33,8 +33,3 @@ with open('rubix.bin') as data:
     binary = data.read()
 
 C = CLEMENCY(binary)
-
-for i in xrange(len(C)-3):
-    if C[i:i+3] == [3, 328, 384]:
-        print i
-
