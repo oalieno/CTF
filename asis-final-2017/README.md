@@ -18,8 +18,6 @@
 
 噴 flag
 
-## Golem is stupid!
-
 ## Mathilda
 
 用 wappalyzer 看出他是用 apache 2.4.25
@@ -68,3 +66,14 @@ http://178.62.48.181/~rooney/?path=..././..././..././..././home/th1sizveryl0ngus
 
 以為有什麼神奇的東西，原來是被耍啦
 
+## Simple Crypto
+
+xor 加密有給 key
+
+直接解密回去
+
+## Handicraft RSA
+
+他的 p-1 和 q-1 有很多質因數
+
+用 pollard p-1 algorithm 就解完了
