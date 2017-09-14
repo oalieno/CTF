@@ -11,9 +11,9 @@ def xor_str(x, y):
     else:
         return ''.join([chr(ord(z) ^ ord(p)) for (z, p) in zip(x, y[:len(x)])])
 
-with open('flag.enc','r') as data:
+with open('flag.enc','rb') as data:
     FLAG = data.read()
-    flag, key = FLAG.encode('hex'), KEY.encode('hex')
+    flag, key = FLAG, KEY.encode('hex')
     enc = xor_str(key * (len(flag) // len(key)), flag)
-    with open('ans','w') as data:
-        data.write(enc)
+    with open('flag','wb') as data:
+        data.write(enc.decode('hex'))
