@@ -2,7 +2,7 @@
 
 from pwn import *
 
-r = remote("secprog.cs.nctu.edu.tw",10105)
+r = remote("bamboofox.cs.nctu.edu.tw",10105)
 
 r.recvuntil("at ")
 data = int(r.recvn(10),16)
