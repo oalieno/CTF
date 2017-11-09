@@ -1,3 +1,3 @@
 # CTF
 
-CTF writeups by OAlienO
+CTF writeups and exploit code by OAlienO
