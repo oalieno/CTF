@@ -4,7 +4,7 @@
 
 ## HW3
 
-題目 : readme
+### 題目 : readme
 
 保護機制 :
 
@@ -47,3 +47,47 @@ rax 是用 setvbuf 附近的 mov eax, edx 先用剛剛的 gadget 把 rdx 設好�
 ![](https://i.imgur.com/mc3PVdE.png)
 
 ![](https://i.imgur.com/cTpp41X.png)
+
+## HW4
+
+### 題目 : fmtfun4u
+
+保護機制 : 
+
+![](https://i.imgur.com/Qs0wMHA.png)
+
+漏洞 : format string
+
+攻擊 :
+
+format string 一次只能 0x10 個字
+
+而且只能寫 4 次很不方便
+
+所以我先 leak stack base address 後把 for 迴圈中的 i 隨便改成一個很大的數字
+
+可以視為有無限次的 format string
+
+接下來就簡單啦
+
+hijack malloc_hook 跳到 libc 中的 one_gadget 就完成了
+
+### 題目 : hacknote2
+
+保護機制 :
+
+![](https://i.imgur.com/OCW4oOW.png)
+
+漏洞 : use after free
+
+攻擊 :
+
+用 use after free 漏洞可以修改 note 的 printnote 函式和 content 指標
+
+先改 content 指標成 puts 的 got，printnote 函式維持不變
+
+就可以 leak libc address
+
+再來就改 printnote 函式成 libc 裡面的 one_gadget
+
+然後就大功告成打完收工
