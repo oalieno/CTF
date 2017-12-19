@@ -143,6 +143,10 @@ flag : SECCON{One of these primes is very smooth.}
 AddType application/x-httpd-php .txt
 ```
 
+我是用 postman 上傳檔案
+
+![](https://i.imgur.com/mqoPozo.png)
+
 `proc_open` 很剛好的沒有被 ban
 
 上傳 `shell.txt` 再去瀏覽 `http://automatic_door.pwn.seccon.jp/0b503d0caf712352fc200bc5332c4f95/sandbox/FAIL_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/shell.txt`
