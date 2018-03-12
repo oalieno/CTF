@@ -1,6 +1,7 @@
 # SECCON CTF QUALS 2017 : SqlSRF
 
 **category** : web
+
 **points** : 400
 
 > The root reply the flag to your mail address if you send a mail that subject is "give me flag" to root.

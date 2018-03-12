@@ -1,6 +1,7 @@
 # ASIS CTF FINAL 2017 : Dig Dug
 
 **category** : web
+
 **points** : 29
 
 > The pot calling the [kettle](https://digx.asisctf.com/) black.

@@ -1,6 +1,7 @@
 # SECCON CTF QUALS 2017 : SHA-1 is dead
 
 **category** : crypto
+
 **points** : 100
 
 > SHA-1 is dead http://sha1.pwn.seccon.jp/ Upload two files satisfy following conditions:

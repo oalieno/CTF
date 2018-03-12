@@ -1,6 +1,7 @@
 # SECCON CTF QUALS 2017 : automatic door
 
 **category** : web
+
 **points** : 500
 
 > Get shell, and execute /flag_x

@@ -1,6 +1,7 @@
 # CSAW CTF QUALS 2017 : Almost Xor
 
 **category** : crypto
+
 **points** : 200
 
 ## write-up

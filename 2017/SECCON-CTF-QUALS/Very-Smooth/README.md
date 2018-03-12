@@ -1,6 +1,7 @@
 # SECCON CTF QUALS 2017 : Very smooth
 
 **category** : crypto
+
 **points** : 300
 
 > Very smooth

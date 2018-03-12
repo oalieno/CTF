@@ -1,6 +1,7 @@
 # TAMUctf 18 : Enigma Too Far?
 
 **category** : crypto
+
 **points** : 75
 
 ## write-up

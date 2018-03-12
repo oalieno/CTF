@@ -1,6 +1,7 @@
 # 0CTF QUALS 2017 : simplesqlin
 
 **category** : web
+
 **points** : 34
 
 ## writeup

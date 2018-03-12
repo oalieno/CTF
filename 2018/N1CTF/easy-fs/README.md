@@ -1,7 +1,9 @@
 # N1CTF 2018 : easy fs
 
 **category** : crypto
+
 **points** : 327
+
 **solves** : 42/517
 
 ## write-up
