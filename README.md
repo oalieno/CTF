@@ -6,8 +6,10 @@ CTF writeups and exploit code by OAlienO
 
 | YEAR |       CTF        |        PROBLEM        |                KEYWORDS                | DIFFICULTY |
 | :--: | :--------------: | :-------------------: | :------------------------------------: | :--------: |
+| 2018 |     VolgaCTF     |       Forbidden       |                AES GCM                 |     A      |
+| 2018 |     VolgaCTF     |        Nonsense       |                  DSA                   |     B      |
 | 2018 |      N1CTF       |       baby N1ES       |            Feistel Network             |     C      |
-| 2018 |      N1CTF       |        baby fs        |       Håstad's Broadcast Attack        |     B      |
+| 2018 |      N1CTF       |        easy fs        |       Håstad's Broadcast Attack        |     B      |
 | 2018 |      N1CTF       |      rsa padding      | Franklin-Reiter Related Message Attack |     C      |
 | 2018 |   AceBear CTF    |   Hello fibonacci?    |                  Math                  |     C      |
 | 2018 |   AceBear CTF    |     random to win     |                  Math                  |     B      |
@@ -41,6 +43,7 @@ CTF writeups and exploit code by OAlienO
 
 | YEAR |       CTF        |  PROBLEM   |        KEYWORDS         | DIFFICULTY |
 | :--: | :--------------: | :--------: | :---------------------: | :--------: |
+| 2018 |     VolgaCTF     |   Ping2    |        overflow         |     D      |
 | 2018 |   AceBear CTF    | easy heap  | out of bound read write |     C      |
 | 2018 |  EOF CTF QUALS   |  writeme   |                         |     D      |
 | 2018 |  EOF CTF QUALS   | magicheap2 |     fastbin attack      |     B      |
@@ -53,6 +56,7 @@ CTF writeups and exploit code by OAlienO
 
 | YEAR |           CTF            |  PROBLEM   | KEYWORDS | DIFFICULTY |
 | :--: | :----------------------: | :--------: | :------: | :--------: |
+| 2018 |         VolgaCTF         |   CrackMe  |  dot net, AES brute force | C |
 | 2018 | CODEGATE CTF Preliminary | RedVelvet  |   angr   |     D      |
 | 2018 | CODEGATE CTF Preliminary |    Boom    |   rust   |     B      |
 | 2018 |      EOF CTF QUALS       |   simple   | windows  |     C      |
