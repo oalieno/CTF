@@ -56,6 +56,7 @@ CTF writeups and exploit code by OAlienO
 
 | YEAR |           CTF            |  PROBLEM   | KEYWORDS | DIFFICULTY |
 | :--: | :----------------------: | :--------: | :------: | :--------: |
+| 2018 |        0CTF QUALS        |    udp     |  socket  |     A      |
 | 2018 |         VolgaCTF         |   CrackMe  |  dot net, AES brute force | C |
 | 2018 | CODEGATE CTF Preliminary | RedVelvet  |   angr   |     D      |
 | 2018 | CODEGATE CTF Preliminary |    Boom    |   rust   |     B      |
