@@ -6,6 +6,10 @@
 
 **solves** : 26
 
+## notice
+
+原本的 binary 太大了我就不放了O_O
+
 ## write-up
 
 這個程式 fork 4000 個 process
