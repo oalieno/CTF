@@ -6,6 +6,9 @@ CTF writeups and exploit code by OAlienO
 
 | YEAR |       CTF        |        PROBLEM        |                KEYWORDS                | DIFFICULTY |
 | :--: | :--------------: | :-------------------: | :------------------------------------: | :--------: |
+| 2018 |       0CTF       |         zer0C4        | RC4, Related Key attack                |    SSS     |
+| 2018 |       0CTF       |        zer0SPN        | SPN, Linear and Differential Cryptanalysis |    SSS     |
+| 2018 |       0CTF       |         zer0TC        | SPN, Linear and Differential Cryptanalysis |    SSS     |
 | 2018 |     VolgaCTF     |       Forbidden       |                AES GCM                 |     A      |
 | 2018 |     VolgaCTF     |        Nonsense       |                  DSA                   |     B      |
 | 2018 |      N1CTF       |       baby N1ES       |            Feistel Network             |     C      |
