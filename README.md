@@ -2,10 +2,14 @@
 
 CTF writeups and exploit code by OAlienO
 
+Don't take DIFFICULTY so seriously
+
 ## CRYPTO
 
 | YEAR |       CTF        |        PROBLEM        |                KEYWORDS                | DIFFICULTY |
 | :--: | :--------------: | :-------------------: | :------------------------------------: | :--------: |
+| 2018 |     UIUCTF       |        xoracle        |               xor cipher               |     B      |
+| 2018 |     UIUCTF       |        Hastad         | Håstad's Broadcast Attack, short message |    D     |
 | 2018 |       0CTF       |         zer0C4        | RC4, Related Key attack                |    SSS     |
 | 2018 |       0CTF       |        zer0SPN        | SPN, Linear and Differential Cryptanalysis |    SSS     |
 | 2018 |       0CTF       |         zer0TC        | SPN, Linear and Differential Cryptanalysis |    SSS     |
@@ -21,8 +25,8 @@ CTF writeups and exploit code by OAlienO
 | 2018 |     TAMUCTF      |      Image That       |                AES ECB                 |     D      |
 | 2018 |     TAMUCTF      |      readyXORnot      |               xor cipher               |     D      |
 | 2018 |     TAMUCTF      |       XORbytes        |               xor cipher               |     D      |
-| 2017 | HITCON CTF QUALS |     secret server     |            AES CBC, padding            |     A      |
-| 2017 | HITCON CTF QUALS | secret server revenge |            AES CBC, padding            |     S      |
+| 2017 | HITCON CTF QUALS |     secret server     |            AES CBC, padding            |     B      |
+| 2017 | HITCON CTF QUALS | secret server revenge |            AES CBC, padding            |     A      |
 | 2017 | SECCON CTF QUALS |      Vigenere3d       |            Vigenere Cipher             |     C      |
 | 2017 | SECCON CTF QUALS |       Ps and Qs       |           RSA, common factor           |     C      |
 | 2017 | SECCON CTF QUALS |     SHA-1 is dead     |             SHA1 Collision             |     D      |
@@ -59,6 +63,7 @@ CTF writeups and exploit code by OAlienO
 
 | YEAR |           CTF            |  PROBLEM   | KEYWORDS | DIFFICULTY |
 | :--: | :----------------------: | :--------: | :------: | :--------: |
+| 2018 |          UIUCTF          |  triptych  |          |     C      |
 | 2018 |        0CTF QUALS        |    udp     |  socket  |     A      |
 | 2018 |         VolgaCTF         |   CrackMe  |  dot net, AES brute force | C |
 | 2018 | CODEGATE CTF Preliminary | RedVelvet  |   angr   |     D      |
