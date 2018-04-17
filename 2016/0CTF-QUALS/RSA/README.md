@@ -21,7 +21,7 @@ Third Order Linear Recurrence Relation in Finite Field](http://eprint.iacr.org/2
 
 或者可以直接用超神的 wolframalpha
 
-http://www.wolframalpha.com/input/?i=x%5E3+%3D+20827907988103030784078915883129+(mod+26440615366395242196516853423447))
+http://www.wolframalpha.com/input/?i=x%5E3+%3D+20827907988103030784078915883129+(mod+26440615366395242196516853423447)
 
 # other write-ups and resources
 
