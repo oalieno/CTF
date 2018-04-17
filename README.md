@@ -25,6 +25,8 @@ Don't take DIFFICULTY so seriously
 | 2018 |     TAMUCTF      |      Image That       |                AES ECB                 |     D      |
 | 2018 |     TAMUCTF      |      readyXORnot      |               xor cipher               |     D      |
 | 2018 |     TAMUCTF      |       XORbytes        |               xor cipher               |     D      |
+| 2017 |     UIUCTF       |        PapaRSA        | Coppersmith's Method, Known Most Bits  |     B      |
+| 2017 |     UIUCTF       |        BabyRSA        |               short message            |     D      |
 | 2017 | HITCON CTF QUALS |     secret server     |            AES CBC, padding            |     B      |
 | 2017 | HITCON CTF QUALS | secret server revenge |            AES CBC, padding            |     A      |
 | 2017 | SECCON CTF QUALS |      Vigenere3d       |            Vigenere Cipher             |     C      |
@@ -39,6 +41,7 @@ Don't take DIFFICULTY so seriously
 | 2017 |  CSAW CTF QUALS  |      Almost Xor       |               xor cipher               |     B      |
 | 2017 |  CSAW CTF QUALS  |       BabyCrypt       |        AES ECB, byte at a time         |     C      |
 | 2017 |    DCTF QUALS    |      forgotmykey      |               xor cipher               |     C      |
+| 2016 |    0CTF QUALS    |         RSA?          |               Rabin 變形               |     B      |
 | 2015 | HITCON CTF QUALS |        rsabin         |               Rabin 變形               |     A      |
 | 2014 | HITCON CTF QUALS |         rsaha         | Franklin-Reiter Related Message Attack |     C      |
 |  OJ  |   jarvisoj.com   |      Medium RSA       |                  RSA                   |     D      |
