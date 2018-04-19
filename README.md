@@ -20,7 +20,7 @@ Don't take DIFFICULTY so seriously
 | 2018 |      N1CTF       |      rsa padding      | Franklin-Reiter Related Message Attack |     C      |
 | 2018 |   AceBear CTF    |   Hello fibonacci?    |                  Math                  |     C      |
 | 2018 |   AceBear CTF    |     random to win     |                  Math                  |     B      |
-| 2018 |   AceBear CTF    |      CNVService       |              AES CBC 變形              |     B      |
+| 2018 |   AceBear CTF    |      CNVService       |              AES CBC 變形              |     A      |
 | 2018 |     TAMUCTF      |    Enigma Too Far     |                 Enigma                 |     D      |
 | 2018 |     TAMUCTF      |      Image That       |                AES ECB                 |     D      |
 | 2018 |     TAMUCTF      |      readyXORnot      |               xor cipher               |     D      |
@@ -41,6 +41,7 @@ Don't take DIFFICULTY so seriously
 | 2017 |  CSAW CTF QUALS  |      Almost Xor       |               xor cipher               |     B      |
 | 2017 |  CSAW CTF QUALS  |       BabyCrypt       |        AES ECB, byte at a time         |     C      |
 | 2017 |    DCTF QUALS    |      forgotmykey      |               xor cipher               |     C      |
+| 2016 |       HCTF       | Crypto So Interesting |       rsa backdoor, wiener attack      |     C      |
 | 2016 |    0CTF QUALS    |         RSA?          |               Rabin 變形               |     B      |
 | 2015 | HITCON CTF QUALS |        rsabin         |               Rabin 變形               |     A      |
 | 2014 | HITCON CTF QUALS |         rsaha         | Franklin-Reiter Related Message Attack |     C      |
