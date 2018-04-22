@@ -59,11 +59,12 @@ Don't take DIFFICULTY so seriously
 
 | YEAR |       CTF        |  PROBLEM   |        KEYWORDS         | DIFFICULTY |
 | :--: | :--------------: | :--------: | :---------------------: | :--------: |
-| 2018 |     VolgaCTF     |   Ping2    |        overflow         |     D      |
+| 2018 |     VXCTF        | Ken Wong's sanity check |  stack overflow |   D   |
+| 2018 |     VolgaCTF     |   Ping2    |     stack overflow      |     D      |
 | 2018 |   AceBear CTF    | easy heap  | out of bound read write |     C      |
 | 2018 |  EOF CTF QUALS   |  writeme   |                         |     D      |
 | 2018 |  EOF CTF QUALS   | magicheap2 |     fastbin attack      |     B      |
-| 2018 |  EOF CTF FINAL   |   secsh    |        overflow         |     D      |
+| 2018 |  EOF CTF FINAL   |   secsh    |      stack overflow     |     D      |
 | 2017 |  AIS3 pre exam   |    pwn1    |                         |     D      |
 | 2017 |    AIS3 FINAL    |    pwn1    |     open read write     |     C      |
 | 2015 | HITCON CTF QUALS |  readable  |     stack migration     |     A      |
