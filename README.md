@@ -8,6 +8,11 @@ Don't take DIFFICULTY so seriously
 
 | YEAR |       CTF        |        PROBLEM        |                KEYWORDS                | DIFFICULTY |
 | :--: | :--------------: | :-------------------: | :------------------------------------: | :--------: |
+| 2018 |      VXCTF       |    Mersenne had a fun time twisting |  mt19937_64, xor cipher  |     C      |
+| 2018 |      VXCTF       |     Multiprime RSA    |        RSA, binary search              |     B      |
+| 2018 |      VXCTF       | Groundbreaking Conjecture |    RSA, known high bits of p       |     B      |
+| 2018 |      VXCTF       |        Taunt          |        RSA, coppersmith method         |     B      |
+| 2018 |      VXCTF       |    Classical Medley   |    affine cipher, permutation cipher   |     D      |
 | 2018 |     UIUCTF       |        xoracle        |               xor cipher               |     B      |
 | 2018 |     UIUCTF       |        Hastad         | Håstad's Broadcast Attack, short message |    D     |
 | 2018 |       0CTF       |         zer0C4        | RC4, Related Key attack                |    SSS     |
@@ -29,7 +34,7 @@ Don't take DIFFICULTY so seriously
 | 2017 |     UIUCTF       |        BabyRSA        |               short message            |     D      |
 | 2017 | HITCON CTF QUALS |     secret server     |            AES CBC, padding            |     B      |
 | 2017 | HITCON CTF QUALS | secret server revenge |            AES CBC, padding            |     A      |
-| 2017 | SECCON CTF QUALS |      Vigenere3d       |            Vigenere Cipher             |     C      |
+| 2017 | SECCON CTF QUALS |      Vigenere3d       |            Vigenere Cipher             |     D      |
 | 2017 | SECCON CTF QUALS |       Ps and Qs       |           RSA, common factor           |     C      |
 | 2017 | SECCON CTF QUALS |     SHA-1 is dead     |             SHA1 Collision             |     D      |
 | 2017 | SECCON CTF QUALS |      Very smooth      |              Williams p+1              |     C      |
