@@ -1,18 +1,16 @@
+#!/usr/bin/env python3
+import gmpy2
+from Crypto.Util.number import inverse
+
 n = 0x7dee6f50d528f08f3f5becb11474bf25d7e24f255f1e530a1454fce126224a032850c3ddc8923cbb78a35c3e162ac38b5c23ba31d3deb05971c042038ea15f179e148fb62ebe13669615b4cbecd360b3119a146533c1a6c37ed7b3ad491dab05e78eeb26d9af4cd3b678ab87e4cfec16c6113bbd65c26e85b7361139717224477fd26e34e40940a53d8a33ee122eb9a0c6248b48ff914041620d23c2e8500b4479039ab0196a6ad6579bf35a481f9f2f852e42fed6219999ef6b5008280c84d8ef1096c23cba09b33267e66c6842e886f9084ccf74bd6a09006f94d56a911a377ef9f730de245b877d3b47c1b4635b996d3b70d9d0aa7037acd6257b90d22d53
 e = 3
 c = 0x18fa9965bf0ee3b47a83e4a7d7181b29d20b538ad2d04f0f5ad6f9edb04ae516fff25f7ca39d2347b6d63a41aa0ba862894e6ec9eb2488a68ef83fda091ce51773d574b6048917233610812a3f132747ffcee85525e67e00c9c4d42d5876b48a26a67c8d961060bc2c6d067b9095ba4dac66823f53265eb3c8b28706374c18a0cfd2fc8b784273f28bd311c0dcc220858cf9947395be7ad0fd5988cb7bf8292c6492d60f9696d88f7bcee119ce0661942ff48ffc6c691f4da0ace8d44dfeb90cc6467a65f50729f74be5ff4d5aabd21c47d895edc06814db66ba8fbd9b6699dd1c329c306dc3b84a21c8a59a37a062380b573d076eba7f9f95366d2b2137fbf5
 
-Z = Zmod(n)
-P.<x> = PolynomialRing(Z)
-
-c = Z(c)
-
 for L in range(59, 0, -1):
-    magic = Z(2 ** (8 * L * 4) + 2 ** (8 * L * 3) + 2 ** (8 * L * 2) + 2 ** (8 * L * 1) + 1)
-    poly = (magic * x) ^ 3 - c
-    poly = poly.monic()
-    roots = poly.small_roots()
-    if len(roots) > 0:
-        flag = roots[0]
-        print hex(int(flag))[2:-1].decode('hex')
+    magic = 2 ** (8 * L * 4) + 2 ** (8 * L * 3) + 2 ** (8 * L * 2) + 2 ** (8 * L * 1) + 1
+    magic = inverse(magic ** 3, n)
+    m, s = gmpy2.iroot(c * magic % n, 3)
+    if s:
+        flag = int(m).to_bytes(50, 'big')
+        print(flag)
         break
