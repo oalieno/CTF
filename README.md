@@ -8,6 +8,8 @@ Don't take DIFFICULTY so seriously
 
 | YEAR |       CTF        |        PROBLEM        |                KEYWORDS                | DIFFICULTY |
 | :--: | :--------------: | :-------------------: | :------------------------------------: | :--------: |
+| 2018 |  ASIS CTF QUALS  |     Uncle Sam         |         Schmidt-Samoa Cryptosystem     |     B      |
+| 2018 |  ASIS CTF QUALS  |   The Early School    |                  xor                   |     D      |
 | 2018 |      VXCTF       |    Mersenne had a fun time twisting |  mt19937_64, xor cipher  |     C      |
 | 2018 |      VXCTF       |     Multiprime RSA    |        RSA, binary search              |     B      |
 | 2018 |      VXCTF       | Groundbreaking Conjecture |    RSA, known high bits of p       |     B      |
@@ -97,6 +99,8 @@ Don't take DIFFICULTY so seriously
 
 | YEAR |  CTF  | PROBLEM  |   KEYWORDS   | DIFFICULTY |
 | :--: | :---: | :------: | :----------: | :--------: |
+| 2018 | ASIS CTF QUALS | Neighbour | perfect power | C |
+| 2018 | ASIS CTF QUALS | Shapiro | chinese remainder theorem | B |
 | 2018 | N1CTF | losetome | anti reversi |     B      |
 | 2018 | N1CTF | mathGame |   3D cube    |     S      |
 
