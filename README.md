@@ -61,6 +61,7 @@ Don't take DIFFICULTY so seriously
 
 | YEAR |       CTF        |  PROBLEM   |        KEYWORDS         | DIFFICULTY |
 | :--: | :--------------: | :--------: | :---------------------: | :--------: |
+| 2018 |     VXCTF        | Christmas  |    return to dl_resolve |     B      |
 | 2018 |     VXCTF        | Ken Wong's sanity check |  stack overflow |   D   |
 | 2018 |     VolgaCTF     |   Ping2    |     stack overflow      |     D      |
 | 2018 |   AceBear CTF    | easy heap  | out of bound read write |     C      |
