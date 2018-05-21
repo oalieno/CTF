@@ -8,6 +8,10 @@ Don't take DIFFICULTY so seriously
 
 | YEAR |       CTF        |        PROBLEM        |                KEYWORDS                | DIFFICULTY |
 | :--: | :--------------: | :-------------------: | :------------------------------------: | :--------: |
+| 2018 |       RCTF       |        ECDH           |  elliptic curve diffie hellman, MITM   |     C      |
+| 2018 |       RCTF       |        cpushop        |         length extension attack        |     C      |
+| 2018 | DEFCON CTF QUALS |      official         |     dsa, partial nonce attack          |     A      |
+| 2018 |    Plaid CTF     |        macsh          |     messenge authentication code       |     B      |
 | 2018 |  ASIS CTF QUALS  |     Uncle Sam         |         Schmidt-Samoa Cryptosystem     |     B      |
 | 2018 |  ASIS CTF QUALS  |   The Early School    |                  xor                   |     D      |
 | 2018 |      VXCTF       |    Mersenne had a fun time twisting |  mt19937_64, xor cipher  |     C      |
