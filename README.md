@@ -8,6 +8,8 @@ Don't take DIFFICULTY so seriously
 
 | YEAR |       CTF        |        PROBLEM        |                KEYWORDS                | DIFFICULTY |
 | :--: | :--------------: | :-------------------: | :------------------------------------: | :--------: |
+| 2018 | Google CTF QUALS |   PERFECT-SECRECY     |           RSA LSB Oracle Attack        |     B      |
+| 2018 | Google CTF QUALS |    DM COLLISION       |      Davies–Meyer, DES, weak key       |     B      |
 | 2018 |       RCTF       |        ECDH           |  elliptic curve diffie hellman, MITM   |     C      |
 | 2018 |       RCTF       |        cpushop        |         length extension attack        |     C      |
 | 2018 | DEFCON CTF QUALS |      official         |     dsa, partial nonce attack          |     A      |
