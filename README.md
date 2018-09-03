@@ -8,6 +8,9 @@ Don't take DIFFICULTY so seriously
 
 | YEAR |       CTF        |        PROBLEM        |                KEYWORDS                | DIFFICULTY |
 | :--: | :--------------: | :-------------------: | :------------------------------------: | :--------: |
+| 2018 | TokyoWesterns CTF 4th 2018 | mixed-cipher |    RSA LSB Oracle Attack, mersenne-twister | B     |
+| 2018 | TokyoWesterns CTF 4th 2018 | Revolutional-Secure-Angou |  RSA, math               |     C      |
+| 2018 | TokyoWesterns CTF 4th 2018 | scs7        |              base59, misc              |     D      |
 | 2018 | Google CTF QUALS |   PERFECT-SECRECY     |           RSA LSB Oracle Attack        |     B      |
 | 2018 | Google CTF QUALS |    DM COLLISION       |      Davies–Meyer, DES, weak key       |     B      |
 | 2018 |       RCTF       |        ECDH           |  elliptic curve diffie hellman, MITM   |     C      |
@@ -67,6 +70,7 @@ Don't take DIFFICULTY so seriously
 
 | YEAR |       CTF        |  PROBLEM   |        KEYWORDS         | DIFFICULTY |
 | :--: | :--------------: | :--------: | :---------------------: | :--------: |
+| 2018 |    0CTF QUALS    |  blackhole |  return to csu, blind   |     B      |
 | 2018 |     VXCTF        | Christmas  |    return to dl_resolve |     B      |
 | 2018 |     VXCTF        | Ken Wong's sanity check |  stack overflow |   D   |
 | 2018 |     VolgaCTF     |   Ping2    |     stack overflow      |     D      |
@@ -76,7 +80,7 @@ Don't take DIFFICULTY so seriously
 | 2018 |  EOF CTF FINAL   |   secsh    |      stack overflow     |     D      |
 | 2017 |  AIS3 pre exam   |    pwn1    |                         |     D      |
 | 2017 |    AIS3 FINAL    |    pwn1    |     open read write     |     C      |
-| 2015 | HITCON CTF QUALS |  readable  |     stack migration     |     A      |
+| 2015 | HITCON CTF QUALS |  readable  |     stack migration     |     B      |
 |  OJ  |     pwnable.kr   |  brainfuck |  brainfuck, return to libc |   C     |
 
 ## REVERSE
