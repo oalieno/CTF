@@ -1,0 +1,1 @@
+flag = 'FLAG{FAKE}'
