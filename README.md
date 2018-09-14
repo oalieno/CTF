@@ -43,6 +43,7 @@ Don't take DIFFICULTY so seriously
 | 2018 |     TAMUCTF      |       XORbytes        |               xor cipher               |     D      |
 | 2017 |     UIUCTF       |        PapaRSA        | Coppersmith's Method, Known Most Bits  |     B      |
 | 2017 |     UIUCTF       |        BabyRSA        |               short message            |     D      |
+| 2017 |    VolgaCTF      |      Casino           |            LFSR                        |     B      |
 | 2017 | HITCON CTF QUALS |     secret server     |            AES CBC, padding            |     B      |
 | 2017 | HITCON CTF QUALS | secret server revenge |            AES CBC, padding            |     A      |
 | 2017 | SECCON CTF QUALS |      Vigenere3d       |            Vigenere Cipher             |     D      |
