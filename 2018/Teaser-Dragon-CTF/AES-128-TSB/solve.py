@@ -43,6 +43,7 @@ def solve_last(L):
             return x
 
 def solve_block(i1):
+    # solve j1[15]
     L = []
     for x in range(256):
         iv = b'\x00' * 15 + bytes([x])
@@ -52,6 +53,8 @@ def solve_block(i1):
     j1 = [0] * 16
     j1[-1] = solve_last(L)
     print(j1)
+
+    # brute force j1[0] to j1[14]
     for i in range(16 - 1):
         iv = b'\x00' * 15 + bytes([j1[-1] ^ (15 - i)])
         for x in range(256):
@@ -62,13 +65,16 @@ def solve_block(i1):
                 break
     return bytes(j1)
 
+# get a i1, j1 pair
 i1 = b'\x00' * 16
 j1 = solve_block(i1)
 
+# get encrypted flag
 plain = b'gimme_flag'
 iv = xor(j1, pad(plain))
 enc = send_block(iv, i1, plain)
 
+# decrypt each block in encrypted flag
 flag = b''
 iv, enc = enc[:16], enc[16:-16]
 ct = iv

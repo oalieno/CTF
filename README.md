@@ -8,9 +8,10 @@ Don't take DIFFICULTY so seriously
 
 | YEAR |       CTF        |        PROBLEM        |                KEYWORDS                | DIFFICULTY |
 | :--: | :--------------: | :-------------------: | :------------------------------------: | :--------: |
-| 2018 | TokyoWesterns CTF 4th 2018 | mixed-cipher |    RSA LSB Oracle Attack, mersenne-twister | B     |
-| 2018 | TokyoWesterns CTF 4th 2018 | Revolutional-Secure-Angou |  RSA, math               |     C      |
-| 2018 | TokyoWesterns CTF 4th 2018 | scs7        |              base59, misc              |     D      |
+| 2018 | Teaser Dragon CTF | AES-128-TSB | AES, padding | B |
+| 2018 | TokyoWesterns CTF 4th | mixed-cipher |    RSA LSB Oracle Attack, mersenne-twister | B     |
+| 2018 | TokyoWesterns CTF 4th | Revolutional-Secure-Angou |  RSA, math               |     C      |
+| 2018 | TokyoWesterns CTF 4th | scs7        |              base59, misc              |     D      |
 | 2018 | Google CTF QUALS |   PERFECT-SECRECY     |           RSA LSB Oracle Attack        |     B      |
 | 2018 | Google CTF QUALS |    DM COLLISION       |      Davies–Meyer, DES, weak key       |     B      |
 | 2018 |       RCTF       |        ECDH           |  elliptic curve diffie hellman, MITM   |     C      |
