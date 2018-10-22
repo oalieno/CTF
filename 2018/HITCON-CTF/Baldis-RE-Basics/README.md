@@ -20,8 +20,16 @@ Here is the list of packages I used to solve this challenge
 | aarch64 | pwntools | capstone | unicorn |
 | mips | keystone | capstone | unicorn |
 | powerpc | pwntools | capstone | pwntools.run_shellcode ( qemu ) |
-| risc-v | pwntools-patch | pwntools-patch | pwntools-patch.run_shellcode ( [spike](https://github.com/riscv/riscv-isa-sim)  |
+| risc-v | pwntools-patch | pwntools-patch | pwntools-patch.run_shellcode ( [spike](https://github.com/riscv/riscv-isa-sim) )  |
 | wasm | wabt/wat2wasm | [wasm](https://github.com/athre0z/wasm) | wabt/wasm-interp |
+
+There are 7 rooms at the beginning
+
+Every room will contain a random architecture to solve
+
+After solving 7 rooms, the hidden architecture **wasm** will come up = =
+
+![](https://i.imgur.com/QaXisdl.png)
 
 ### install
 
