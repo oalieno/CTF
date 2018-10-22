@@ -22,7 +22,8 @@ table = {
     b' ___   _______   _____   ___     \n': 'i386',
     b'      _       _______     ____    ____  \n': 'arm',
     b'   ____       ____     ______       ____   __    __     ______   _   _     \n': 'aarch64',
-    b'  _____  _____  _____  _____   __      __\n': 'riscv64'
+    b'  _____  _____  _____  _____   __      __\n': 'riscv64',
+    b' \xe2\x96\x84\xe2\x96\x88     \xe2\x96\x88\xe2\x96\x84     \xe2\x96\x84\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88    \xe2\x96\x84\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88   \xe2\x96\x84\xe2\x96\x84\xe2\x96\x84\xe2\x96\x84\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x84\xe2\x96\x84\xe2\x96\x84\xe2\x96\x84   \n': 'wasm'
 }
 
 UCS = {
@@ -57,14 +58,9 @@ def walk(r, steps):
         r.sendlineafter('w/a/s/d:', step)
 
 def getArch(r):
-    r.recvline()
+    r.recvline() # clear screen
     head = r.recvline()
-    try:
-        return table[head]
-    except KeyError:
-        print(head)
-        r.interactive()
-        exit()
+    return table[head]
 
 def wasmdis(machine):
     assembly = ''
@@ -251,19 +247,27 @@ def main():
         challenge2(r, arch)
         challenge3(r, arch)
 
+    # first half flag
     r.send('\n' * 3)
     for route in routes:
         walk(r, route)
+        r.recvline()
         print(r.sendlineafter('Press the Enter key to continue...', '').decode())
     walk(r, 's' * 3 + 'd' * 5)
     r.send('\n' * 3)
 
-    arch = 'wasm'
+    # solve final round - wasm
+    for i in range(3):
+        r.recvuntil('(Press the Enter key to continue...)')
+    arch = getArch(r)
     print('arch =', arch)
     challenge1(r, arch)
     challenge2(r, arch)
     challenge3(r, arch)
 
+    r.sendlineafter('(Press the Enter key to continue...)', '')
+
+    # remaining flag
     r.interactive()
 
 main()
