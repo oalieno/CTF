@@ -1,0 +1,64 @@
+diff -Naur pwnlib/asm.py pwnlib-patch/asm.py
+--- pwnlib/asm.py	2018-10-21 16:19:13.440268877 +0000
++++ pwnlib-patch/asm.py	2018-10-22 03:16:57.435919487 +0000
+@@ -271,6 +271,7 @@
+         'vax': 'elf32-vax',
+         'sparc': 'elf32-sparc',
+         'sparc64': 'elf64-sparc',
++        'riscv64': 'elf64-littleriscv'
+     }
+ 
+     if arch in bfdnames:
+@@ -549,8 +550,8 @@
+             relocs = subprocess.check_output(
+                 [which_binutils('readelf'), '-r', step2]
+             ).decode('utf8').strip()
+-            if extract and len(relocs.split('\n')) > 1:
+-                log.error('Shellcode contains relocations:\n%s' % relocs)
++            #if extract and len(relocs.split('\n')) > 1:
++            #    log.error('Shellcode contains relocations:\n%s' % relocs)
+         else:
+             shutil.copy(step2, step3)
+ 
+@@ -628,6 +629,15 @@
+         '--set-section-flags', '.data=code',
+         '--rename-section', '.data=.text',
+     ]
++    if arch == 'riscv64':
++        objdump = _objdump() + ['-d', '--adjust-vma', str(vma), '-b', bfdname, '-m', 'riscv']
++        objcopy = _objcopy() + [
++            '-I', 'binary',
++            '-O', bfdname,
++            '-B', 'riscv',
++            '--set-section-flags', '.data=code',
++            '--rename-section', '.data=.text',
++        ]
+ 
+     if arch == 'thumb':
+         objcopy += ['--prefix-symbol=$t.']
+diff -Naur pwnlib/context/__init__.py pwnlib-patch/context/__init__.py
+--- pwnlib/context/__init__.py	2018-10-21 15:49:16.843534845 +0000
++++ pwnlib-patch/context/__init__.py	2018-10-22 03:16:57.407919531 +0000
+@@ -394,6 +394,7 @@
+         'sparc64': big_64,
+         'thumb': little_32,
+         'vax': little_32,
++        'riscv64': little_64
+     })
+ 
+     #: Valid values for :attr:`endian`
+diff -Naur pwnlib/tubes/process.py pwnlib-patch/tubes/process.py
+--- pwnlib/tubes/process.py	2018-10-22 03:17:43.443848119 +0000
++++ pwnlib-patch/tubes/process.py	2018-10-22 03:16:57.407919531 +0000
+@@ -270,6 +270,11 @@
+             except:
+                 pass
+ 
++            if context.arch == 'riscv64':
++                spike = '/root/toolchain/bin/spike'
++                pk = '/root/toolchain/riscv64-unknown-elf/bin/pk'
++                prefixes.append(([spike, pk], spike))
++
+             for prefix, executable in prefixes:
+                 try:
+                     self.proc = subprocess.Popen(args=prefix + argv,
