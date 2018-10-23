@@ -8,6 +8,8 @@
 
 ## write-up
 
+First of all, we got the first blood of this challenge, yeahhh!!!!!!!!!
+
 In this challenge, we have to do **assemble, disassemble, and emulate** for 8 kinds of architecture
 
 Here is the list of packages I used to solve this challenge
