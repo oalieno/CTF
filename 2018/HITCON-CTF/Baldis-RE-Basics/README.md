@@ -86,7 +86,11 @@ For emulate, the server will give us a **function**, and we need to determine th
 
 **keystone**, **capstone**, **unicorn** and **pwntools** all did not support risc-v, so I patch **pwntools** `pwnlib/context/__init__.py`, `pwnlib/asm.py`, and `pwnlib/tubes/process.py` and use **pwntools** to do `asm`, `disasm`, and `run_shellcode`
 
-I use the same trick to get the return value through **exit code**
+Because **pwntools** actually use the binutils tools and qemu to do `asm` and `disasm` and `run_shellcode` work for us, and `binutils-riscv64-linux-gnu` exists and also `spike` can replace qemu
+
+All we need to do is add some constant in **pwntools**, it will work.
+
+For emulate, I use the same trick to get the return value through **exit code**
 
 Notice that there is a infinite loop in the shellcode ( maybe some kind of joke from the challenge maker ? )
 
