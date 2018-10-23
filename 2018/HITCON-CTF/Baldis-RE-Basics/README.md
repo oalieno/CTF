@@ -43,7 +43,8 @@ binutils for different architecture
 apt-get install binutils-powerpc-linux-gnu \\
                 binutils-aarch64-linux-gnu \\
                 binutils-mips-linux-gnu \\
-                binutils-arm-linux-gnueabi
+                binutils-arm-linux-gnueabi \\
+                binutils-riscv64-linux-gnu
 ```
 
 [keystone](http://www.keystone-engine.org/) to assemble
