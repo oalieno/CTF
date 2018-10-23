@@ -46,26 +46,26 @@ print('n =', n)
 if local:
     print('realn =', realn)
 
-L = 0
-H = n
-t = enc(256)
-c = flag
-for _ in range(n.bit_length() // 8):
-    c = (t * c) % n
-    res = dec(c)
-    if res == 0:
-        H = n // 256
-    else:
-        res = -res % 256
+def lsb(b, nn):
+    L = 0
+    H = n
+    for x in b:
+        i = -x * inverse(nn, 256) % 256
         D = H - L
         OL = L
-        L = OL + res * D // 256
-        H = OL + (res + 1) * D // 256
-    print("L =", L)
-    print("H =", H)
+        L = OL + i * D // 256
+        H = OL + (i + 1) * D // 256
+    return L
 
-m = L # plain text
-flag = long_to_bytes(m)
-print(flag)
-if b'hitcon' in flag:
-    print(flag)
+b = [] # last bytes
+t = enc(256)
+c = flag
+for _ in range(size(n) // 8):
+    c = (t * c) % n
+    b.append(dec(c))
+
+for nn in range(1, 257, 2):
+    m = lsb(b, nn)
+    flag = long_to_bytes(m)
+    if b'hitcon' in flag:
+        print(flag)

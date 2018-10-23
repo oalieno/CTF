@@ -7,12 +7,9 @@ sys.stdin  = os.fdopen(sys.stdin.fileno(), 'r', 0)
 sys.stdout = os.fdopen(sys.stdout.fileno(), 'w', 0)
 
 def genKey():
-  while True:
-    p = getPrime(512)
-    q = getPrime(512)
-    n = p*q
-    if n % 256 == 1:
-        break
+  p = getPrime(512)
+  q = getPrime(512)
+  n = p*q
   phi = (p-1)*(q-1)
   while True:
     e = getRandomInteger(40)
