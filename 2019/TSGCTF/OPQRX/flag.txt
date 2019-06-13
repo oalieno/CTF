@@ -1,0 +1,1 @@
+TSGCTF{Absolutely, X should be 'S' in 'OPQRX'.}
