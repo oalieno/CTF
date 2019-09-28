@@ -20,10 +20,14 @@ There are two circumstances:
 1. If the bit count parity is change, we are sure that there must be an overflow over n.
 2. If the bit count parity is unchange, we know nothing ( just like John Snow )
 
+### First Method
+
 From the LSB Oracle Attack point of view:
 1. If the bit count parity is change, `L = (L + U) // 2`
 2. If the bit count parity is unchange, both of `L = (L + U) // 2` and `U = (L + U) // 2` are possible to happend, we need to try both possibilities.
 3. Then we prune the path using the fact that the character set only contains `'.-'`
+
+### Second Method
 
 From the Bleichenbacher 1998 point of view:
 
