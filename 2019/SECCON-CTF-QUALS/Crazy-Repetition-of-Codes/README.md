@@ -92,6 +92,8 @@ Z = S * (x ^ (k * b) - 1) / (x ^ b - 1)
 All calculation above is under mod K
 ```
 
+for more detail, read the source code [solve.sage](solve.sage)
+
 flag: `SECCON{Ur_Th3_L0rd_0f_the_R1NGs}`
 
 # other write-ups and resources
