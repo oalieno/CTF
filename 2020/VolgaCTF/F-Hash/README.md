@@ -20,3 +20,5 @@ Rewrite the whole function using python and do the following two things.
 Finally, replace the right value in gdb and continue running. The output will be the flag.  
 
 # other write-ups and resources
+
+* https://pastebin.com/Dj6wteXk
