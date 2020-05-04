@@ -29,12 +29,8 @@ def calc(a, b, depth = 256):
         ans.append((v13 % (1 << 64), (v13 >> 64), (v15[2] + v16[2]) % (1 << 64)))
     return ans
 
-a = 0x6369757120656854
-b = 0x206e776f7262206b
-#a = 0x706d756a20786f66
-#b = 0x74207265766f2073
-#a = 0x20797a616c206568
-#b = 0x80676f64
-#a = 0
-#b = 0x2b
-print(list(map(hex, calc(a, b)[256])))
+al = [0x6369757120656854, 0x706d756a20786f66, 0x20797a616c206568, 0]
+bl = [0x206e776f7262206b, 0x74207265766f2073, 0x80676f64, 0x2b]
+
+for a, b in zip(al, bl):
+    print(list(map(hex, calc(a, b)[256])))
