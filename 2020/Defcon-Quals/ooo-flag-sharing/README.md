@@ -8,7 +8,7 @@
 
 ## TL;DR
 
-Do binary search on `if secret.startswith(b"OOO{"):`
+Binary search on `if secret.startswith(b"OOO{"):`
 
 ## write-up
 
