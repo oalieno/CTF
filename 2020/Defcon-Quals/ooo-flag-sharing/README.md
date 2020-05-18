@@ -1,4 +1,4 @@
-# VolgaCTF 2020 Qualifier : F-Hash
+# DEFCON CTF Qualifier 2020 : ooo-flag-sharing
 
 **category** : crypto
 
