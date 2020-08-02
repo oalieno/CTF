@@ -17,7 +17,8 @@ Use sagemath `bsgs` ( baby step giant step ) to brute force discrete logarithm.
 But may run out of memory. I split it into 1024 sections and run each section paralleling using 8 core.  
 See `a.sh` and `b.sh` and `solve.sage` for details.  
 And then found that the length of flag is only 13 !??  
-The description also say something about RSA? And I found that `n` has many small factor. But I got the flag before I reimplementing pohlig hellman algorithm.
+The description also say something about RSA?  
+And I found that `n` has many small factor. But I got the flag before I reimplementing pohlig hellman algorithm.
 
 ## flag
 
