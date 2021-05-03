@@ -1,4 +1,4 @@
-# DEFCON CTF Qualifier 2020 : ooo-flag-sharing
+# DEFCON CTF Qualifier 2021 : rick
 
 **category** : rev
 
